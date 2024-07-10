@@ -2,8 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 html,
 body,
 :root {
   height: 100%;
+}
+
+@layer components {
+  .max-container {
+    @apply max-w-[1440px] mx-auto px-2 sm:px-4 md:px-10 xl:px-20
+  }
+  
 }
